@@ -2,24 +2,44 @@
 import linkedin from "../assets/linkedin.svg";
 import github from "../assets/github.svg";
 import email from "../assets/email.svg";
+import discord from "../assets/discord.svg";
+
+const bg =
+  "before:block before:absolute before:-inset-1 before:-skew-y-6 hover:before:bg-pink-400 relative inline-block";
+const icon = "relative hover:invert";
 ---
 
-<div class="flex flex-row gap-1">
+<div class="flex flex-row gap-2">
   <a
     href="https://www.linkedin.com/in/itsjoeoui/"
     target="_blank"
     rel="noopener noreferrer"
+    class={bg}
   >
-    <img src={linkedin} />
+    <img class={icon} src={linkedin} />
   </a>
   <a
     href="https://www.github.com/itsjoeoui/"
     target="_blank"
     rel="noopener noreferrer"
+    class={bg}
   >
-    <img src={github} />
+    <img class={icon} src={github} />
   </a>
-  <a href="mailto:joey@itsjoeoui.com" target="_blank" rel="noopener noreferrer">
-    <img src={email} />
+  <a
+    href="https://discordapp.com/users/481294021054955533"
+    target="_blank"
+    rel="noopener noreferrer"
+    class={bg}
+  >
+    <img class={icon} src={discord} />
+  </a>
+  <a
+    href="mailto:joey@itsjoeoui.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    class={bg}
+  >
+    <img class={icon} src={email} />
   </a>
 </div>
