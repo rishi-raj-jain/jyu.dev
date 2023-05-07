@@ -3,23 +3,37 @@ import ProjectCard from "./ProjectCard.astro";
 import awsonbudget from "../assets/awsonbudget.jpeg";
 import radishbattlepass from "../assets/radishbattlepass.png";
 import astrostarformation from "../assets/astrostarformation.png";
+import teachacomputertodomath from "../assets/teachacomputertodomath.webp";
+import flojoy from "../assets/flojoy.png";
 ---
 
 <div class="text-slate-800">
   <div
-    class="-ml-3 pl-6 md:pl-24 lg:pl-48 xl:pl-64 2xl:pl-96 flex overflow-x-scroll gap-6 no-scrollbar"
+    class="grid gap-6 grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 4xl:grid-cols-4"
   >
     <ProjectCard
-      title={"AWS on Budget"}
-      desc="A K8S-like cloud management system written in Python using FastAPI, with an acommpany CLI written in Golang and a dashboard implemented in SolidJS with TypeScript."
+      title={"Flojoy"}
+      desc="Flojoy is an open-source, drop-in replacement for engineering and ETL software such as LabVIEW, Simulink, RapidMiner, and Alteryx. Currently working on Flojoy's Electron desktop client and serverless cloud platform."
+      img={flojoy}
+      href="https://github.com/awsonbudget"
+    />
+    <ProjectCard
+      title={"K8S on Budget"}
+      desc="A K8S-like cloud management system written in Python. It has support for dynamic scaling, load balancing, failure recovery, and much more! It also includes a SolidJS dashboard and a CLI written in Golang."
       img={awsonbudget}
       href="https://github.com/awsonbudget"
     />
     <ProjectCard
       title={"Radish Battle Pass"}
-      desc="2nd place winner of the Radish challenge at McHacks 10. Collaborated with team members and designed a tier-based reward system for Radish (a local food delivery startup) to improve customer engagement as well as user retention."
+      desc="This is a tier-based reward system built with React and TailwindCSS, along with a backend in NestJS. Our team is the 2nd place winner of the Radish challenge at McHacks 10."
       img={radishbattlepass}
       href="https://devpost.com/software/radish-battle-pass"
+    />
+    <ProjectCard
+      title={"Teach a Computer to Do Math"}
+      desc="Trained an LSTM network with Tensorflow to do basic arithmetic, such as adding two integers together. The neural network is able to evaluate the expression literally and provide an answer with decent accuracy."
+      img={teachacomputertodomath}
+      href="https://devpost.com/software/star-formation"
     />
     <ProjectCard
       title={"Astro: Star Formation"}
