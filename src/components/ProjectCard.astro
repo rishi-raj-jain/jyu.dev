@@ -9,15 +9,21 @@ export interface Props {
 const { title, desc, img, href } = Astro.props;
 ---
 
-<a target="_blank" rel="noopener noreferrer">
-  <div class="flex flex-1 h-full flex-col bg-white rounded-lg overflow-hidden">
-    <img class="h-48 w-full object-cover" src={img} alt={title} />
-    <div class="py-2"></div>
-    <h3 class="mx-4 font-bold text-lg">{title}</h3>
-    <div class="py-2"></div>
-    <p class="flex-grow mx-4 text-gray-700 text-base">{desc}</p>
-    <div class="py-2"></div>
-    <div class="mx-4">learn more</div>
-    <div class="py-2"></div>
-  </div>
-</a>
+<div class="flex flex-1 h-full flex-col bg-white rounded-lg overflow-hidden">
+  <img class="h-48 w-full object-cover" src={img} alt={title} />
+  <div class="py-2"></div>
+  <h3 class="mx-4 font-bold text-lg">{title}</h3>
+  <div class="py-2"></div>
+  <p class="flex-grow mx-4 text-gray-700 text-base">{desc}</p>
+  <div class="py-2"></div>
+  <a target="_blank" href={href} rel="noopener noreferrer">
+    <button class="mx-4">
+      <p
+        class="underline underline-offset-4 hover:underline-offset-8 hover:text-pink-500 hover:decoration-pink-500"
+      >
+        learn more
+      </p></button
+    >
+  </a>
+  <div class="py-2"></div>
+</div>
