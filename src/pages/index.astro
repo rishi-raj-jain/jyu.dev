@@ -2,12 +2,14 @@
 import Intro from "../components/Intro.astro";
 import Showcase from "../components/Showcase.astro";
 import Layout from "../layouts/Layout.astro";
-import "../styles/base.css";
 import Outro from "../components/Outro.astro";
+import "../styles/base.css";
 ---
 
 <Layout title="Welcome to JYUHQ.">
-  <div class="px-6 xs:px-12 sm:px-18 md:px-32 lg:px-48 xl:px-64 2xl:px-96">
+  <div
+    class="px-6 xs:px-12 sm:px-18 md:px-32 lg:px-48 xl:px-64 2xl:px-96 mb-12"
+  >
     <div class="py-6"></div>
     <Intro />
     <div class="py-6"></div>
