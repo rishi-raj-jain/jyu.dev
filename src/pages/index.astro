@@ -1,27 +1,19 @@
 ---
-import Header from "../components/Header.astro";
 import Intro from "../components/Intro.astro";
 import Showcase from "../components/Showcase.astro";
-import Footer from "../components/Footer.astro";
 import Layout from "../layouts/Layout.astro";
 import "../styles/base.css";
 import Outro from "../components/Outro.astro";
 ---
 
 <Layout title="Welcome to JYUHQ.">
-  <div
-    class="min-h-screen bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-rose-100/50 to-teal-100/50 dark:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] dark:from-gray-700 dark:via-gray-900 dark:to-black text-slate-800 dark:text-slate-50"
-  >
-    <Header />
-    <div class="px-6 xs:px-12 sm:px-18 md:px-32 lg:px-48 xl:px-64 2xl:px-96">
-      <div class="py-6"></div>
-      <Intro />
-      <div class="py-6"></div>
-      <Showcase />
-      <div class="py-6"></div>
-      <Outro />
-      <div class="py-6"></div>
-    </div>
-    <Footer />
+  <div class="px-6 xs:px-12 sm:px-18 md:px-32 lg:px-48 xl:px-64 2xl:px-96">
+    <div class="py-6"></div>
+    <Intro />
+    <div class="py-6"></div>
+    <Showcase />
+    <div class="py-6"></div>
+    <Outro />
+    <div class="py-6"></div>
   </div>
 </Layout>
