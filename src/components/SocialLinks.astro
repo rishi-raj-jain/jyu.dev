@@ -11,35 +11,51 @@ const icon = "relative hover:invert dark:invert";
 
 <div class="flex flex-row gap-2">
   <a
-    href="https://www.linkedin.com/in/itsjoeoui/"
-    target="_blank"
-    rel="noopener noreferrer"
-    class={bg}
-  >
-    <img class={icon} width="40" height="40" src={linkedin} />
-  </a>
-  <a
     href="https://www.github.com/itsjoeoui/"
     target="_blank"
     rel="noopener noreferrer"
+    aria-label="Joey's GitHub"
     class={bg}
   >
-    <img class={icon} width="40" height="40" src={github} />
+    <img class={icon} width="40" height="40" alt="Joey's GitHub" src={github} />
+  </a>
+  <a
+    href="https://www.linkedin.com/in/itsjoeoui/"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Joey's Linkedin"
+    class={bg}
+  >
+    <img
+      class={icon}
+      width="40"
+      height="40"
+      alt="Joey's Linkedin"
+      src={linkedin}
+    />
   </a>
   <a
     href="https://discordapp.com/users/481294021054955533"
     target="_blank"
     rel="noopener noreferrer"
+    aria-label="Joey's Discord"
     class={bg}
   >
-    <img class={icon} width="40" height="40" src={discord} />
+    <img
+      class={icon}
+      width="40"
+      height="40"
+      alt="Joey's Discord"
+      src={discord}
+    />
   </a>
   <a
     href="mailto:joey@jyu.dev"
     target="_blank"
     rel="noopener noreferrer"
+    aria-label="Joey's Email"
     class={bg}
   >
-    <img class={icon} width="40" height="40" src={email} />
+    <img class={icon} width="40" height="40" alt="Joey's Email" src={email} />
   </a>
 </div>
