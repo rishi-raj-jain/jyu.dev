@@ -1,6 +1,6 @@
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
-import vercel from "@astrojs/vercel/serverless";
+import vercelEdge from "@astrojs/vercel/edge";
 
 // https://astro.build/config
 export default defineConfig({
@@ -12,7 +12,5 @@ export default defineConfig({
     }),
   ],
   output: "server",
-  adapter: vercel({
-    analytics: true,
-  }),
+  adapter: vercelEdge(),
 });
