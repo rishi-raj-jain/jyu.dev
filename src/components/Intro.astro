@@ -1,23 +1,10 @@
 ---
 import SocialLinks from "./SocialLinks.astro";
-
-const currentHour = new Date().getHours();
-let greeting: string;
-
-if (currentHour < 12) {
-  greeting = "Good morning!";
-} else if (currentHour < 18) {
-  greeting = "Good afternoon!";
-} else {
-  greeting = "Good evening!";
-}
 ---
 
 <div class="">
   <div class="px-1">
-    <div class="font-bold text-4xl sm:text-5xl">
-      {greeting} 👋
-    </div>
+    <div class="font-bold text-4xl sm:text-5xl">Hey there! 🫡</div>
     <div class="py-3"></div>
     <div class="text-md sm:text-lg">
       <div>
