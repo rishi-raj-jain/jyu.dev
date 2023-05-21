@@ -20,5 +20,5 @@
 }
 
 .responsive {
-  @apply px-6 xs:px-12 sm:px-16 md:px-24 lg:px-48 xl:px-72 3xl:px-[420px] 4xl:px-[520px] mb-12;
+  @apply px-6 xs:px-12 sm:px-16 md:px-24 lg:px-48 xl:px-72 3xl:px-[420px] 4xl:px-[520px];
 }
